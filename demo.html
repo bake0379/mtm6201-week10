@@ -12,49 +12,67 @@
   </head>
 
   <body>
-    <h1>Week 10 - CSS Frameworks</h1>
-    <p class="h2">Learning Bootstrap</p>
-    <ul class="list-unstyled text-bg-primary p-4">
-        <li>Apples</li>
-        <li>Berries
-            <ul>
-                <li>Strawberry</li>
-                <li>Blueberry</li>
-                <li>Blackberry</li>
-            </ul>
-        </li>
-    </ul>
-    <img src="https://placebear.com/800/600" alt="two bears on rocks" class="img-fluid w-100">
-    <table class="table table-dark table-hover">
-        <thead>
-            <tr>
-                <th>SKU</th>
-                <th>Title</th>
-                <th>Price</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>HU4852</td>
-                <td>Printed Mug</td>
-                <td>$15</td>
-            </tr>
-            <tr>
-                <td>HU1945</td>
-                <td>Keyring</td>
-                <td>$10</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="3">Members get 10% off</td>
-            </tr>
-        </tfoot>
-    </table>
-    <button type="button" class="btn btn-primary btn-lg">Buy Now!</button>
+    <div class="container-md">
+        <div class="row">
+            <div class="col-md-4 offset-md-4 py-5 text-center">
 
+                <h1>Week 10 - CSS Frameworks</h1>
+                <p class="h2">Learning Bootstrap</p>
+            </div> <!-- closes the header-->
+            <div class="col-md-6 align-self-center">
 
+                <ul class="list-unstyled text-bg-primary p-4">
+                    <li>Apples</li>
+                    <li>Berries
+                        <ul>
+                            <li>Strawberry</li>
+                            <li>Blueberry</li>
+                            <li>Blackberry</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div> <!-- closes the list -->
 
+        <div class="col-md-6">
+            <img src="https://placebear.com/800/600" alt="two bears on rocks" class="img-fluid w-100">
+        </div> <!-- closes the image -->
+    
+        <div class="col-md-12">
+            <table class="table table-dark table-hover">
+                <thead>
+                    <tr>
+                        <th>SKU</th>
+                        <th>Title</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HU4852</td>
+                        <td>Printed Mug</td>
+                        <td>$15</td>
+                    </tr>
+                    <tr>
+                        <td>HU1945</td>
+                        <td>Keyring</td>
+                        <td>$10</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Members get 10% off</td>
+                    </tr>
+                </tfoot>
+            </table>
+            
+            <button type="button" class="btn btn-primary btn-lg d-block mx-auto">Buy Now!</button>
+        
+        </div> <!-- closes the table/button-->
+        
+            
+         </div> <!-- closes row-->
+    </div> <!-- closes container-md -->
+<!-------------Bootstrap JS File-------------->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
